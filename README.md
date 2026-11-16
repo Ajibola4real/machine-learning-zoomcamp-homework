@@ -48,3 +48,21 @@ The API returns:
 The model can help identify employees who may be at risk
 of leaving. Predictions are estimates and should not be
 used as the sole basis for employment decisions.
+
+
+## Cloud Deployment (Render)
+
+I successfully deployed my Employee Attrition Prediction API
+to Render using Docker.
+
+**Live API endpoint:**
+https://machine-learning-zoomcamp-homework-keun.onrender.com/predict
+
+The API accepts POST requests containing employee information
+in JSON format and returns the predicted attrition probability.
+
+I tested the cloud API successfully and received HTTP status 200.
+The prediction matched my local Flask and Docker results.
+
+Note: The free Render service may take some time to respond
+after a period of inactivity.
