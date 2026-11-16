@@ -8,6 +8,11 @@ with open("employee_attrition_model_from_script.pkl", "rb") as f:
 
 app = Flask(__name__)
 
+
+@app.route("/")
+def home():
+    return "Employee Attrition Prediction API is running successfully!"
+
 @app.route("/predict", methods=["POST"])
 def predict():
     employee = request.get_json()
